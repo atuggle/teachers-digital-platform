@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import PrintData from "./js/components/PrintData";
+import TextEdit from "./js/components/TextEdit";
+
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      textdata: "Hello World",
+    };
+  }
+
+  changeText(textdata) {
+    this.setState({textdata});
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Curriculum Review Tool | Consumer Financial Protection Bureau</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <PrintData textdata={this.state.textdata}/>
+        <TextEdit textdata={this.state.textdata} changeText={this.changeText.bind(this)} />
       </div>
     );
   }
