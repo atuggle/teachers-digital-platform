@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import PrintData from "./js/components/PrintData";
-import TextEdit from "./js/components/TextEdit";
+import CustomerReviewToolComponent from "./js/components/CustomerReviewToolComponent";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      textdata: "Hello World",
-    };
-  }
-
   changeText(textdata) {
     this.setState({textdata});
   }
@@ -19,8 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PrintData textdata={this.state.textdata}/>
-        <TextEdit textdata={this.state.textdata} changeText={this.changeText.bind(this)} />
+        <CustomerReviewToolComponent />
       </div>
     );
   }
