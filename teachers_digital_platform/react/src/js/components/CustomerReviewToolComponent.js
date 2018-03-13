@@ -5,7 +5,7 @@ import ContentDistinctive from "./distinctives/ContentDistinctive";
 import UtilityDistinctive from "./distinctives/UtilityDistinctive";
 import QualityDistinctive from "./distinctives/QualityDistinctive";
 import EfficacyDistinctive from "./distinctives/EfficacyDistinctive";
-import SurveyPage from "./pages/SurveyPage";
+import SurveyPageContainer from "./pages/SurveyPageContainer";
 
 export default class CustomerReviewToolComponent extends React.Component {
   constructor() {
@@ -25,9 +25,8 @@ export default class CustomerReviewToolComponent extends React.Component {
   }
 
   distinctiveClicked(clickedDistinctive) {
-    console.log("CLICKED: Distinctive clicked: ", clickedDistinctive);
     this.setState({clickedDistinctive});
-    this.setState({textdata:clickedDistinctive});
+    this.setState({currentPage:clickedDistinctive});
   }
 
   render() {
@@ -40,7 +39,7 @@ export default class CustomerReviewToolComponent extends React.Component {
           <EfficacyDistinctive distinctiveClicked={this.distinctiveClicked.bind(this)} title="Efficacy" criteria="3 criteria" estimatedtime="Est. time 30 min" description="Improves financial knowledge, skills, or behaviors" />
         </div>
         <div >
-          <SurveyPage className="SurveyPage" textdata={this.state.textdata} changeText={this.changeText.bind(this)} />
+          <SurveyPageContainer className="SurveyPage" currentPage={this.state.currentPage} />
         </div>
       </div>
     );
