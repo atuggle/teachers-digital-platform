@@ -1,13 +1,13 @@
 import React from "react";
 
-export default class ContentCriterionPage extends React.Component {
-    changeContentText(e) {
-        const contentText = e.target.value;
-        this.props.changeContentText(contentText);
+export default class EfficacyCriterionPage extends React.Component {
+    changeEfficacyText(e) {
+        const efficacyText = e.target.value;
+        this.props.changeEfficacyText(efficacyText);
     }
 
-    changeContentRadio(e) {
-        this.props.changeContentRadio("In Progress...");
+    changeEfficacyRadio(e) {
+        this.props.changeEfficacyRadio("In Progress...");
     }   
     
     render() {
@@ -24,11 +24,11 @@ export default class ContentCriterionPage extends React.Component {
                           <p>One can save money in various ways, including at home in a piggy bank or at a commercial bank, credit union, or savings and loan institution.</p>
                           <p>Saving helps individuals act on future opportunities, meet short-term and long-term goals, and address financial emergencies.</p>
                           <div className="m-form-field m-form-field__radio">
-                              <input className="a-radio" type="radio" name="radio_1" id="test_1" onChange={this.changeContentRadio.bind(this)} />
+                              <input className="a-radio" type="radio" name="radio_1" id="test_1" onChange={this.changeEfficacyRadio.bind(this)} />
                               <label className="a-label" >Yes</label>
                           </div>
                           <div className="m-form-field m-form-field__radio">
-                              <input className="a-radio" type="radio" name="radio_1" id="test_2" onChange={this.changeContentRadio.bind(this)} />
+                              <input className="a-radio" type="radio" name="radio_1" id="test_2" onChange={this.changeEfficacyRadio.bind(this)} />
                               <label className="a-label" >No</label>
                           </div>
                       </li>
@@ -39,7 +39,7 @@ export default class ContentCriterionPage extends React.Component {
                           Write your notes for this criterion <em>(Optional)</em>
                       </label>
                       <br />
-                      <textarea className="a-text-input" id="test_7" value={this.props.contentText} onChange={this.changeContentText.bind(this)} ></textarea>
+                      <textarea className="a-text-input" id="test_7" value={this.props.efficacyText} onChange={this.changeEfficacyText.bind(this)} ></textarea>
                   </p>
               </div>
             </div>

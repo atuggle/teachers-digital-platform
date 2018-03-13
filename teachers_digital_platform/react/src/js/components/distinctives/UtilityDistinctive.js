@@ -11,7 +11,7 @@ export default class UtilityDistinctive extends React.Component {
   render() {
     return (
       <button key={this.props.title} onClick={this.handleOnClick.bind(this)}>
-        <BaseDistinctive className="Distinctive" title={this.props.title} criteria={this.props.criteria} estimatedtime={this.props.estimatedtime} description={this.props.description} />
+        <BaseDistinctive className="Distinctive" inProgress={this.props.inProgress} title={this.props.title} criteria={this.props.criteria} estimatedtime={this.props.estimatedtime} description={this.props.description} />
       </button>
     );
   }

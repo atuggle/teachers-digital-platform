@@ -6,11 +6,11 @@ export default class BaseDistinctive extends React.Component {
     return (
       <div className="Distinctive">
         <div className="DistinctiveBoxFormat">
-          <h4>{this.props.title}</h4>
+          <h4>{this.props.title} {this.props.inProgress}</h4>
           <p>
-          {this.props.description}<br /><br />
-          {this.props.criteria}<br />
-          {this.props.estimatedtime}
+            {this.props.description}<br /><br />
+            {this.props.criteria}<br />
+            {this.props.estimatedtime}
           </p>
         </div>
       </div>
