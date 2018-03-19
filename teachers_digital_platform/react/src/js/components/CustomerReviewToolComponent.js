@@ -35,7 +35,12 @@ export default class CustomerReviewToolComponent extends React.Component {
 
   changeContentText(contentText) {
     this.setState({contentText});
-    this.setState({contentInProgress: "In Progress..."});
+    if(contentText !== ""){
+      this.setState({contentInProgress: "In Progress..."});
+    }
+    else{
+      this.setState({contentInProgress: ""});
+    }
   }
 
   changeContentRadio(val) {
@@ -45,7 +50,12 @@ export default class CustomerReviewToolComponent extends React.Component {
 
   changeUtilityText(utilityText) {
     this.setState({utilityText});
-    this.setState({utilityInProgress: "In Progress..."});
+    if(utilityText !== ""){
+      this.setState({utilityInProgress: "In Progress..."});
+    }
+    else{
+      this.setState({utilityInProgress: ""});
+    }
   }
 
   changeUtilityRadio(val) {
@@ -60,12 +70,22 @@ export default class CustomerReviewToolComponent extends React.Component {
 
   changeQualityText(qualityText) {
     this.setState({qualityText});
-    this.setState({qualityInProgress: "In Progress..."});
+    if(qualityText !== ""){
+      this.setState({qualityInProgress: "In Progress..."});
+    }
+    else{
+      this.setState({qualityInProgress: ""});
+    }
   }
 
   changeEfficacyText(efficacyText) {
     this.setState({efficacyText});
-    this.setState({efficacyInProgress: "In Progress..."});
+    if(efficacyText !== ""){
+      this.setState({efficacyInProgress: "In Progress..."});
+    }
+    else{
+      this.setState({efficacyInProgress: ""});
+    }
   }
 
   changeEfficacyRadio(val) {
