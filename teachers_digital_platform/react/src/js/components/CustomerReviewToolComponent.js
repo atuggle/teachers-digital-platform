@@ -11,21 +11,18 @@ export default class CustomerReviewToolComponent extends React.Component {
   constructor() {
     super();
     this.state = {
-      textdata: "Hello World",
-      title: "Nothing",
-      description: "Nothing",
       criteria: "Nothing",
       estimatedtime: "Nothing",
       distinctive: C.START_DISTINCTIVE,
       currentPage: C.START_DISTINCTIVE,
       utilityInProgress: "",
-      contentInProgress: "",
-      qualityInProgress: "",
+      contentInProgress: localStorage.getItem("contentInProgress"),
+      qualityInProgress: localStorage.getItem("qualityInProgress"),
       efficacyInProgress: "",
-      contentText: "",
-      utilityText: "",
-      qualityText: "",
-      efficacyText: "",
+      contentText: localStorage.getItem("contentText"),
+      utilityText: localStorage.getItem("utilityText"),
+      qualityText: localStorage.getItem("qualityText"),
+      efficacyText: localStorage.getItem("efficacyText"),
       contentIndicator1: "na",
       utilityIndicator1: "na",
       qualityIndicator1: "na",
@@ -34,18 +31,24 @@ export default class CustomerReviewToolComponent extends React.Component {
   }
 
   changeContentText(contentText) {
+    localStorage.setItem("contentText", contentText);
     this.setState({contentText});
+
     if(contentText !== ""){
-      this.setState({contentInProgress: "In Progress..."});
+      localStorage.setItem("contentInProgress", "In Progress...");
     }
     else{
-      this.setState({contentInProgress: ""});
+      localStorage.setItem("contentInProgress", "");
     }
+
+    this.setState({contentInProgress: localStorage.getItem("contentInProgress")});
   }
 
   changeContentRadio(val) {
     this.setState({contentIndicator1: val})
-    this.setState({contentInProgress: "In Progress..."});
+    localStorage.setItem("contentIndicator1", val);
+    localStorage.setItem("contentInProgress", "In Progress...");
+    this.setState({contentInProgress: localStorage.getItem("contentInProgress")});
   }
 
   changeUtilityText(utilityText) {
