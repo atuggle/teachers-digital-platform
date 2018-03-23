@@ -19,6 +19,32 @@ export default class CustomerReviewToolComponent extends React.Component {
       contentInProgress: localStorage.getItem("contentInProgress"),
       qualityInProgress: localStorage.getItem("qualityInProgress"),
       efficacyInProgress: "",
+      totalComponentAnswers:{
+        contentCriterionAnswerList: {
+
+        },
+        contentCriterionAnswerNotes: {
+          contentText: localStorage.getItem("contentText"),
+        },
+        qualityCriterionAnswerList: {
+
+        },
+        qualityCriterionAnswerNotes: {
+          qualityText: localStorage.getItem("qualityText"),
+        },
+        utilityCriterionAnswerList: {
+
+        },
+        utilityCriterionAnswerNotes: {
+          utilityText: localStorage.getItem("utilityText"),
+        },
+        efficacyCriterionAnswerList: [{
+
+        }],
+        efficacyCriterionAnswerNotes: {
+          efficacyText: localStorage.getItem("efficacyText"),
+        },
+      },
       contentText: localStorage.getItem("contentText"),
       utilityText: localStorage.getItem("utilityText"),
       qualityText: localStorage.getItem("qualityText"),
@@ -30,9 +56,10 @@ export default class CustomerReviewToolComponent extends React.Component {
     };
   }
 
+
   changeContentText(contentText) {
     localStorage.setItem("contentText", contentText);
-    this.setState({contentText});
+    this.setState({totalComponents: {contentCriterionAnswerNotes: {contentText}}});
 
     if(contentText !== ""){
       localStorage.setItem("contentInProgress", "In Progress...");
@@ -117,7 +144,7 @@ export default class CustomerReviewToolComponent extends React.Component {
         <div >
           <SurveyPageContainer className="SurveyPage" 
             currentPage={this.state.currentPage} 
-            contentText={this.state.contentText}
+            totalComponentAnswers={this.state.totalComponentAnswers}
             changeContentText={this.changeContentText.bind(this)}
             changeContentRadio={this.changeContentRadio.bind(this)}
             

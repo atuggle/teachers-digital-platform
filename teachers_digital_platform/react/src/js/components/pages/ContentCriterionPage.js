@@ -4,6 +4,18 @@ import ContentCriterion from "../CriterionComponents/ContentCriterionComponent";
 
 export default class ContentCriterionPage extends React.Component {
 
+    constructor(){
+        super();
+        this.setState({
+            contentText: ""
+        })
+    }
+
+    changeContentText(e) {
+        const contentText = e.target.value;
+        this.props.changeContentText(contentText);
+    }
+
     render() {
         return (
             <div>
@@ -183,10 +195,11 @@ export default class ContentCriterionPage extends React.Component {
                                 Anything you want to note about this criterion? Please do not share any Personally Identifiable Information (PII), including, but not limited to, your name, address, pho number, email address, Social Security number, etc.
                         </small>
                     </label>
-                    <textarea class="a-text-input
-                                    a-text-input__full"
-                                id="crt-notes-1"
-                                rows="6"></textarea>
+                    <textarea className="a-text-input"
+                     id="test_7"
+                     value={this.props.contentText} 
+                     onChange={this.changeContentText.bind(this)} >
+                    </textarea>
                 </div>
             </div>
 
