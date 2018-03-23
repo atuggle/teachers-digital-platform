@@ -103,7 +103,11 @@ export default class CustomerReviewToolComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="block block__flush-top">
+        <h1>Curriculum Review</h1>
+        <p>Middle School Example Curriculum</p>
+        <p>Start the review by selecting a dimension. You do not need to complete all dimensions in one sitting. You’ll be able to download a dimension report for each dimension as well as a summary report at the end.</p>
+        
         <div className="DistinctivesBlock" >
           <ContentDistinctive distinctiveClicked={this.distinctiveClicked.bind(this)} inProgress={this.state.contentInProgress} title="Content" criteria="6 criteria" estimatedtime="Est. time 30 min" description="Covers core knowledge and skills in content standards" />
           <UtilityDistinctive distinctiveClicked={this.distinctiveClicked.bind(this)} inProgress={this.state.utilityInProgress} title="Utility"  criteria="7 criteria" estimatedtime="Est. time 30 min" description="Supports effective teaching" />
