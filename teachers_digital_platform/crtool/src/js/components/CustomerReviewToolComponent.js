@@ -5,6 +5,7 @@ import C from "../constants";
 import SummaryButton from "./buttons/SummaryButton";
 import SaveWorkModal from "./dialogs/SaveWorkModal";
 import StartOverModal from "./dialogs/StartOverModal";
+import ModalDialogues from "./dialogs/ModalDialogues"
 import DistinctiveMenuBar from "./distinctives/DistinctiveMenuBar";
 import SurveyPageContainer from "./pages/SurveyPageContainer";
 import PageInstructionsComponent from "./PageInstructionsComponent";
@@ -177,7 +178,8 @@ export default class CustomerReviewToolComponent extends React.Component {
 
     return (
       <div>
-        <SaveWorkModal />
+        <ModalDialogues
+          dialogue="SaveWorkDialogue" />
         <h1>You’re reviewing: {this.state.curriculumTitle}</h1>
         
         <PageInstructionsComponent currentPage={this.state.currentPage} />
