@@ -43,6 +43,22 @@ const Repository = {
         return localStorage.getItem(C.EFFICACY_STATUS);
     },
 
+    getContentShowErrors() {
+        return localStorage.getItem(C.CONTENT_SHOW_ERRORS) || false;
+    },
+
+    getQualityShowErrors() {
+        return localStorage.getItem(C.QUALITY_SHOW_ERRORS) || false;
+    },
+
+    getUtilityShowErrors() {
+        return localStorage.getItem(C.UTILITY_SHOW_ERRORS) || false;
+    },
+
+    getEfficacyShowErrors() {
+        return localStorage.getItem(C.EFFICACY_SHOW_ERRORS) || false;
+    },
+
     getContentIsDone() {
         return localStorage.getItem(C.CONTENT_IS_DONE);
     },
@@ -160,6 +176,26 @@ const Repository = {
     saveNumberFinalSummaryViews(component, count) {
         localStorage.setItem("numberFinalSummaryViews", count);
         component.setState({numberFinalSummaryViews: count});
+    },
+
+    saveContentShowErrors(component, value) {
+        localStorage.setItem(C.CONTENT_SHOW_ERRORS, value);
+        component.setState({contentShowErrors: value});
+    },
+    
+    saveQualityShowErrors(component, value) {
+        localStorage.setItem(C.QUALITY_SHOW_ERRORS, value);
+        component.setState({qualityShowErrors: value});
+    },
+    
+    saveUtilityShowErrors(component, value) {
+        localStorage.setItem(C.UTILITY_SHOW_ERRORS, value);
+        component.setState({utilityShowErrors: value});
+    },
+    
+    saveEfficacyShowErrors(component, value) {
+        localStorage.setItem(C.EFFICACY_SHOW_ERRORS, value);
+        component.setState({efficacyShowErrors: value});
     },
 
     /*

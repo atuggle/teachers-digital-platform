@@ -1241,6 +1241,9 @@ Array [
       I’m done reviewing studies
     </button>
   </div>,
+  <div
+    id="efficacy-crt-question-2"
+  />,
   <hr
     className="hr u-mb30 u-mt45"
   />,
@@ -2781,6 +2784,7 @@ Array [
   </div>,
   <div
     className="block block__flush-top"
+    id="efficacy-crt-question-3"
   >
     <h3
       className="h2"
@@ -5938,6 +5942,9 @@ Array [
       </div>
     </div>
   </div>,
+  <div
+    id="efficacy-crt-question-2"
+  />,
   <hr
     className="hr u-mb30 u-mt45"
   />,

@@ -6,12 +6,6 @@ export default class SummaryButton extends React.Component {
 
     handleSummaryButtonClick() {
         this.props.handleSummaryButtonClick();
-
-        //HACK: need to scroll to top of screen after we navigate.
-        setTimeout(function(){
-            let main = document.getElementById("main");
-            main.scrollIntoView();
-        }, 100);
     }
 
     render() {
@@ -42,7 +36,7 @@ export default class SummaryButton extends React.Component {
             );
         } else {
             return (
-                <button className="a-btn" disabled>
+                <button className="a-btn" onClick={(e) => {this.handleSummaryButtonClick()}} >
                     Continue to {this.props.currentPage.toLowerCase()} summary
                 </button>
             );

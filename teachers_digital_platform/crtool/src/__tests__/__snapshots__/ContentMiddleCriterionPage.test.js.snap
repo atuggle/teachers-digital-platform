@@ -84,13 +84,6 @@ Array [
   <hr
     className="hr u-mb30 u-mt30"
   />,
-  <p
-    className="u-mb60"
-  >
-    <strong>
-      All questions are required, unless otherwise noted.
-    </strong>
-  </p>,
   <div
     className="block block__flush-top"
     id="criterion_1"
@@ -390,6 +383,7 @@ Array [
   </div>,
   <div
     className="block block__flush-top"
+    id="content-middle-crt-question-2"
   >
     <h3
       className="h2"
@@ -512,13 +506,6 @@ Array [
   <hr
     className="hr u-mb30 u-mt30"
   />,
-  <p
-    className="u-mb60"
-  >
-    <strong>
-      All questions are required, unless otherwise noted.
-    </strong>
-  </p>,
   <div
     className="block block__flush-top"
     id="criterion_1"
@@ -2874,6 +2861,7 @@ Array [
   </div>,
   <div
     className="block block__flush-top"
+    id="content-middle-crt-question-6"
   >
     <h3
       className="h2"
@@ -2996,13 +2984,6 @@ Array [
   <hr
     className="hr u-mb30 u-mt30"
   />,
-  <p
-    className="u-mb60"
-  >
-    <strong>
-      All questions are required, unless otherwise noted.
-    </strong>
-  </p>,
   <div
     className="block block__flush-top"
     id="criterion_1"
@@ -3972,6 +3953,7 @@ Array [
   </div>,
   <div
     className="block block__flush-top"
+    id="content-middle-crt-question-3"
   >
     <h3
       className="h2"
@@ -4094,13 +4076,6 @@ Array [
   <hr
     className="hr u-mb30 u-mt30"
   />,
-  <p
-    className="u-mb60"
-  >
-    <strong>
-      All questions are required, unless otherwise noted.
-    </strong>
-  </p>,
   <div
     className="block block__flush-top"
     id="criterion_1"
@@ -4400,6 +4375,7 @@ Array [
   </div>,
   <div
     className="block block__flush-top"
+    id="content-middle-crt-question-2"
   >
     <h3
       className="h2"
@@ -4522,13 +4498,6 @@ Array [
   <hr
     className="hr u-mb30 u-mt30"
   />,
-  <p
-    className="u-mb60"
-  >
-    <strong>
-      All questions are required, unless otherwise noted.
-    </strong>
-  </p>,
   <div
     className="block block__flush-top"
     id="criterion_1"
@@ -4841,6 +4810,7 @@ Array [
   </div>,
   <div
     className="block block__flush-top"
+    id="content-middle-crt-question-2"
   >
     <h3
       className="h2"

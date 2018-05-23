@@ -63,6 +63,8 @@ const CriterionService = {
         if (this.isDistinctiveComplete(component, alteredCriterionObjects, changedDistinctive)) {
             Repository.setDistinctiveStatus(component, changedDistinctive, C.STATUS_COMPLETE);
 
+            this.setShowErrorsFalse(component, changedDistinctive);
+
             //Analytics dimension is done (all radio buttons in dimension have been clicked)
             this.sendAnalyticsDimensionStatusHasChanged(component, changedDistinctive, C.STATUS_COMPLETE);
         }
@@ -71,6 +73,25 @@ const CriterionService = {
 
             //Analytics dimension is in progress
             this.sendAnalyticsDimensionStatusHasChanged(component, changedDistinctive, C.STATUS_IN_PROGRESS);
+        }
+    },
+
+    setShowErrorsFalse(component, changedDistinctive) {
+        switch(changedDistinctive) {
+            case C.CONTENT_PAGE:
+                Repository.saveContentShowErrors(component, false);
+                break;
+            case C.UTILITY_PAGE:
+                Repository.saveUtilityShowErrors(component, false);
+                break;
+            case C.QUALITY_PAGE:
+                Repository.saveQualityShowErrors(component, false);
+                break;
+            case C.EFFICACY_PAGE:
+                Repository.saveEfficacyShowErrors(component, false);
+                break;
+            default:
+                break;
         }
     },
 
