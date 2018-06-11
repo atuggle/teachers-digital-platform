@@ -95,6 +95,7 @@ const ContentHighCalculationService = {
 
     calculateThirdCriterion(criterionScore) {
         if (criterionScore.all_essential_yes) {
+        //if (criterionScore.essential_total_yes === 4) {
             criterionScore.exceeds = true;
         } else if (criterionScore.essential_total_yes === 3) {
             criterionScore.meets = true;
@@ -128,6 +129,7 @@ const ContentHighCalculationService = {
 
     calculateSixthCriterion(criterionScore) {
         if (criterionScore.all_essential_yes) {
+        // if (criterionScore.essential_total_yes === 3) {
             criterionScore.exceeds = true;
         } else if (criterionScore.essential_total_yes === 2) {
             criterionScore.meets = true;
