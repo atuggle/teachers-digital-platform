@@ -139,7 +139,6 @@ test('isUtilityCriterionGroupComplete correctly scores criterion 4 group for exc
 
     // Act
     let result = UtilityCalculationService.isUtilityCriterionGroupComplete(criterionGroupName, criterionScore);
-    console.log(result.exceeds);
     // Assert
     expect(result.meets).toBe(false);
     expect(result.doesnotmeet).toBe(false);
