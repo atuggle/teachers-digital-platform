@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
 let result;
 
 const contentMidldleProps = {
-    currentPage: "ContentPrintElementaryPage",
+    currentPage: "ContentPrintMiddlePage",
     contentIsDone: true,
     contentStatus: "complete",
     contentSummaryView: true,
