@@ -1,0 +1,1545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content Print Elementary Page renders correctly 1`] = `
+Array [
+  <div
+    className="h5"
+  >
+    CFPB curriculum review tool
+  </div>,
+  <h1>
+    Content
+     summary for 
+  </h1>,
+  <p
+    className="lead-paragraph u-mb30"
+  >
+    The content dimension evaluates the supports for using the curriculum. Such supports include guidance for teachers, materials that facilitate strong and effective instruction, and assessments to measure student mastery of skills and knowledge.
+  </p>,
+  <p>
+    <strong>
+      Date of publication:
+    </strong>
+     
+  </p>,
+  <p>
+    <strong>
+      Grade range:
+    </strong>
+     
+    
+  </p>,
+  <p>
+    <strong>
+      Reviewed on:
+    </strong>
+     
+  </p>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <h2
+    id="radio_content-elementary-crt-1"
+  >
+    Criterion 1:  Earning, income, and careers
+  </h2>,
+  <p
+    className="u-mb30"
+  >
+    The curriculum addresses grade-level appropriate topics for earning, income, and careers.
+  </p>,
+  <div
+    aria-describedby="radio_content-elementary-crt-1"
+    className="m-curriculum-status"
+    role="radiogroup"
+  >
+    <ul
+      className="m-list__unstyled u-mb0"
+    >
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon is-active"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="true"
+              aria-disabled="true"
+              className="m-form-field_radio-text is-active"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Exceeds
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Both components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Meets
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "1 component was addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Does not meet
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "0 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="m-curriculum-status_components"
+    >
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Your answers for essential components:</b>",
+          }
+        }
+      />
+      <ul
+        className="m-component-list"
+      >
+        <li>
+          <b>
+            2
+          </b>
+           Yes
+        </li>
+        <li>
+          <b>
+            0
+          </b>
+           No
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="m-form-field m-form-field__textarea"
+  >
+    <div
+      className="a-label a-label__heading"
+    >
+      My notes  
+      <small
+        className="a-label_helper"
+      >
+        (optional)
+      </small>
+    </div>
+    <p
+      className="o-survey_question-helper"
+    >
+      No information provided
+    </p>
+  </div>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <h2
+    id="radio_content-elementary-crt-2"
+  >
+    Criterion 2: Saving and investing
+  </h2>,
+  <p
+    className="u-mb30"
+  >
+    The curriculum addresses grade-level appropriate topics for saving and investing.
+  </p>,
+  <div
+    aria-describedby="radio_content-elementary-crt-2"
+    className="m-curriculum-status"
+    role="radiogroup"
+  >
+    <ul
+      className="m-list__unstyled u-mb0"
+    >
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon is-active"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="true"
+              aria-disabled="true"
+              className="m-form-field_radio-text is-active"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Exceeds
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "All 4 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Meets
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "3 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Does not meet
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Less than 3 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="m-curriculum-status_components"
+    >
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Your answers for essential components:</b>",
+          }
+        }
+      />
+      <ul
+        className="m-component-list"
+      >
+        <li>
+          <b>
+            4
+          </b>
+           Yes
+        </li>
+        <li>
+          <b>
+            0
+          </b>
+           No
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="m-form-field m-form-field__textarea"
+  >
+    <div
+      className="a-label a-label__heading"
+    >
+      My notes  
+      <small
+        className="a-label_helper"
+      >
+        (optional)
+      </small>
+    </div>
+    <p
+      className="o-survey_question-helper"
+    >
+      No information provided
+    </p>
+  </div>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <h2
+    id="radio_content-elementary-crt-3"
+  >
+    Criterion 3: Spending
+  </h2>,
+  <p
+    className="u-mb30"
+  >
+    The curriculum addresses grade-level appropriate topics for spending.
+  </p>,
+  <div
+    aria-describedby="radio_content-elementary-crt-3"
+    className="m-curriculum-status"
+    role="radiogroup"
+  >
+    <ul
+      className="m-list__unstyled u-mb0"
+    >
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon is-active"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="true"
+              aria-disabled="true"
+              className="m-form-field_radio-text is-active"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Exceeds
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "5 or more components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Meets
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "4 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Does not meet
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Less than 4 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="m-curriculum-status_components"
+    >
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Your answers for essential components:</b>",
+          }
+        }
+      />
+      <ul
+        className="m-component-list"
+      >
+        <li>
+          <b>
+            6
+          </b>
+           Yes
+        </li>
+        <li>
+          <b>
+            0
+          </b>
+           No
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="m-form-field m-form-field__textarea"
+  >
+    <div
+      className="a-label a-label__heading"
+    >
+      My notes  
+      <small
+        className="a-label_helper"
+      >
+        (optional)
+      </small>
+    </div>
+    <p
+      className="o-survey_question-helper"
+    >
+      No information provided
+    </p>
+  </div>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <h2
+    id="radio_content-elementary-crt-4"
+  >
+    Criterion 4: Borrowing and credit
+  </h2>,
+  <p
+    className="u-mb30"
+  >
+    The curriculum addresses grade-level appropriate topics for borrowing and credit.
+  </p>,
+  <div
+    aria-describedby="radio_content-elementary-crt-4"
+    className="m-curriculum-status"
+    role="radiogroup"
+  >
+    <ul
+      className="m-list__unstyled u-mb0"
+    >
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon is-active"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="true"
+              aria-disabled="true"
+              className="m-form-field_radio-text is-active"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Exceeds
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Both components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Meets
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "1 component was addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Does not meet
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "0 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="m-curriculum-status_components"
+    >
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Your answers for essential components:</b>",
+          }
+        }
+      />
+      <ul
+        className="m-component-list"
+      >
+        <li>
+          <b>
+            2
+          </b>
+           Yes
+        </li>
+        <li>
+          <b>
+            0
+          </b>
+           No
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="m-form-field m-form-field__textarea"
+  >
+    <div
+      className="a-label a-label__heading"
+    >
+      My notes  
+      <small
+        className="a-label_helper"
+      >
+        (optional)
+      </small>
+    </div>
+    <p
+      className="o-survey_question-helper"
+    >
+      No information provided
+    </p>
+  </div>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <h2
+    id="radio_content-elementary-crt-5"
+  >
+    Criterion 5: Managing financial risk
+  </h2>,
+  <p
+    className="u-mb30"
+  >
+    The curriculum addresses grade-level appropriate topics for managing potential financial risk, including insurance.
+  </p>,
+  <div
+    aria-describedby="radio_content-elementary-crt-5"
+    className="m-curriculum-status"
+    role="radiogroup"
+  >
+    <ul
+      className="m-list__unstyled u-mb0"
+    >
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon is-active"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="true"
+              aria-disabled="true"
+              className="m-form-field_radio-text is-active"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Exceeds
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Both components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Meets
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "1 component was addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Does not meet
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "0 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="m-curriculum-status_components"
+    >
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Your answers for essential components:</b>",
+          }
+        }
+      />
+      <ul
+        className="m-component-list"
+      >
+        <li>
+          <b>
+            2
+          </b>
+           Yes
+        </li>
+        <li>
+          <b>
+            0
+          </b>
+           No
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="m-form-field m-form-field__textarea"
+  >
+    <div
+      className="a-label a-label__heading"
+    >
+      My notes  
+      <small
+        className="a-label_helper"
+      >
+        (optional)
+      </small>
+    </div>
+    <p
+      className="o-survey_question-helper"
+    >
+      No information provided
+    </p>
+  </div>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <h2
+    id="radio_content-elementary-crt-6"
+  >
+    Criterion 6: Financial responsibility and money management
+  </h2>,
+  <p
+    className="u-mb30"
+  >
+    The curriculum addresses grade-level appropriate topics for financial responsibility, money management, and financial decisions.
+  </p>,
+  <div
+    aria-describedby="radio_content-elementary-crt-6"
+    className="m-curriculum-status"
+    role="radiogroup"
+  >
+    <ul
+      className="m-list__unstyled u-mb0"
+    >
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon is-active"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="true"
+              aria-disabled="true"
+              className="m-form-field_radio-text is-active"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Meets
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "1 component was addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+      <li
+        className="u-mb30"
+      >
+        <div
+          className="m-form-field m-form-field__radio m-form-field__display"
+        >
+          <div
+            className="a-label"
+          >
+            <svg
+              className="m-form-field_radio-icon"
+              viewBox="0 0 22 22"
+            >
+              <circle
+                className="m-form-field_radio-icon-stroke"
+                cx="11"
+                cy="11"
+                r="10"
+              />
+              <circle
+                className="m-form-field_radio-icon-fill"
+                cx="11"
+                cy="11"
+                r="7"
+              />
+            </svg>
+            <div
+              aria-checked="false"
+              aria-disabled="true"
+              className="m-form-field_radio-text"
+              role="radio"
+            >
+              <div>
+                <strong>
+                  Does not meet
+                </strong>
+              </div>
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "0 components were addressed",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div
+      className="m-curriculum-status_components"
+    >
+      <p
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<b>Your answers for essential components:</b>",
+          }
+        }
+      />
+      <ul
+        className="m-component-list"
+      >
+        <li>
+          <b>
+            1
+          </b>
+           Yes
+        </li>
+        <li>
+          <b>
+            0
+          </b>
+           No
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="m-form-field m-form-field__textarea"
+  >
+    <div
+      className="a-label a-label__heading"
+    >
+      My notes  
+      <small
+        className="a-label_helper"
+      >
+        (optional)
+      </small>
+    </div>
+    <p
+      className="o-survey_question-helper"
+    >
+      No information provided
+    </p>
+  </div>,
+  <hr
+    className="hr u-mb30 u-mt30"
+  />,
+  <div
+    className="block block__flush-top block__padded-bottom block__border-bottom"
+  >
+    <h2
+      className={false}
+      id="radio_content-elementary-crt-overall"
+    >
+      <span
+        className="a-icon a-icon__large a-icon__space-after"
+      >
+        <svg
+          class="cf-icon-svg"
+          viewBox="0 0 1000 1200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M379.9 493.6c-.7 0-1.5 0-2.2-.1-.7 0-1.5-.1-2.2-.2s-1.5-.2-2.2-.3c-.7-.1-1.5-.2-2.2-.4-.7-.1-1.4-.3-2.2-.5l-2.1-.6c-.7-.2-1.4-.4-2.1-.7-.7-.2-1.4-.5-2.1-.8s-1.3-.6-2-.9-1.3-.6-2-1c-.6-.3-1.3-.7-1.9-1.1s-1.3-.8-1.9-1.2c-.6-.4-1.2-.8-1.8-1.3-.6-.4-1.2-.9-1.8-1.4-.6-.5-1.1-.9-1.7-1.4-.5-.5-1.1-1-1.6-1.5s-1-1.1-1.5-1.6-1-1.1-1.4-1.7c-.5-.6-.9-1.2-1.4-1.7-.4-.6-.9-1.2-1.3-1.8-.4-.6-.8-1.2-1.2-1.9-.4-.6-.7-1.3-1.1-1.9-.3-.6-.7-1.3-1-2s-.6-1.3-.9-2-.5-1.4-.8-2c-.2-.7-.5-1.4-.7-2.1l-.6-2.1c-.2-.7-.3-1.4-.5-2.2-.1-.7-.3-1.4-.4-2.2-.1-.7-.2-1.5-.3-2.2-.1-.7-.1-1.5-.2-2.2 0-.7-.1-1.5-.1-2.2s0-1.5.1-2.2c0-.7.1-1.5.2-2.2s.2-1.5.3-2.2c.1-.7.2-1.4.4-2.2.2-.7.3-1.4.5-2.1l.6-2.1c.2-.7.5-1.4.7-2.1s.5-1.4.8-2.1.6-1.4.9-2c.3-.7.7-1.3 1-2 .3-.6.7-1.3 1.1-1.9s.8-1.3 1.2-1.9c.4-.6.8-1.2 1.3-1.8.4-.6.9-1.2 1.4-1.7.5-.6 1-1.1 1.4-1.7.5-.5 1-1.1 1.5-1.6s1.1-1 1.6-1.5 1.1-1 1.7-1.4c.6-.5 1.2-.9 1.8-1.4.6-.4 1.2-.9 1.8-1.3.6-.4 1.2-.8 1.9-1.2.6-.4 1.3-.7 1.9-1.1.6-.3 1.3-.7 2-1s1.3-.6 2-.9 1.4-.5 2.1-.8c.7-.2 1.4-.5 2.1-.7l2.1-.6c.7-.2 1.4-.3 2.2-.5.7-.1 1.5-.3 2.2-.4s1.5-.2 2.2-.3c.7-.1 1.5-.1 2.2-.2 1.5-.1 3-.1 4.4 0 .7 0 1.5.1 2.2.2s1.5.2 2.2.3c.7.1 1.5.2 2.2.4.7.1 1.4.3 2.2.5l2.1.6c.7.2 1.4.5 2.1.7s1.4.5 2 .8c.7.3 1.4.6 2 .9.7.3 1.3.6 2 1 .6.3 1.3.7 1.9 1.1s1.2.8 1.9 1.2c.6.4 1.2.8 1.8 1.3.6.4 1.2.9 1.8 1.4.6.5 1.1 1 1.7 1.4.5.5 1.1 1 1.6 1.5s1 1.1 1.5 1.6 1 1.1 1.5 1.7.9 1.1 1.4 1.7c.4.6.9 1.2 1.3 1.8.4.6.8 1.2 1.2 1.9.4.6.7 1.3 1.1 1.9.3.6.7 1.3 1 2s.6 1.3.9 2 .5 1.4.8 2.1c.2.7.5 1.4.7 2.1l.6 2.1c.2.7.3 1.4.5 2.1.1.7.3 1.5.4 2.2s.2 1.5.3 2.2c.1.7.1 1.5.2 2.2 0 .7.1 1.5.1 2.2s0 1.5-.1 2.2c0 .7-.1 1.5-.2 2.2s-.2 1.5-.3 2.2c-.1.7-.2 1.5-.4 2.2-.1.7-.3 1.4-.5 2.2l-.6 2.1c-.2.7-.4 1.4-.7 2.1-.2.7-.5 1.4-.8 2-.3.7-.6 1.4-.9 2-.3.7-.6 1.3-1 2-.3.7-.7 1.3-1.1 1.9s-.8 1.3-1.2 1.9c-.4.6-.8 1.2-1.3 1.8-.4.6-.9 1.2-1.4 1.7-.5.6-1 1.1-1.5 1.7s-1 1.1-1.5 1.6-1.1 1-1.6 1.5-1.1 1-1.7 1.4c-.6.5-1.2.9-1.8 1.4-.6.4-1.2.9-1.8 1.3-.6.4-1.2.8-1.9 1.2-.6.4-1.3.7-1.9 1.1-.7.3-1.3.7-2 1s-1.3.6-2 .9-1.4.5-2 .8c-.7.2-1.4.5-2.1.7l-2.1.6c-.7.2-1.4.3-2.2.5-.7.1-1.5.3-2.2.4s-1.5.2-2.2.3c-.7.1-1.5.1-2.2.2-.7.1-1.5.1-2.2.1zM331.6 681.2h329.3v40H331.6z"
+          />
+          <circle
+            cx="380.1"
+            cy="448.8"
+            r="45.2"
+          />
+          <path
+            d="M331.6 782.8h329.3v40H331.6zM331.6 579.5h329.3v40H331.6z"
+          />
+          <path
+            d="M500 105.2c-276.1 0-500 223.9-500 500s223.9 500 500 500 500-223.9 500-500-223.9-500-500-500zm230.8 794.5c0 11-9 20-20 20H290.3c-11 0-20-9-20-20V312.4c0-11 9-20 20-20l239.2.2v166.3c0 16.8 13.8 30.6 30.6 30.6h171.3l-.6 410.2zm.6-456.5H575.8V292.7l155.5 150.1v.4h.1z"
+          />
+        </svg>
+      </span>
+      Content overall score
+    </h2>
+    <p
+      className="u-mb30"
+    >
+      How does this curriculum meet the criteria for content:
+    </p>
+    <div
+      aria-describedby="radio_content-elementary-crt-overall"
+      role="radiogroup"
+    >
+      <ul
+        className="m-list__unstyled"
+      >
+        <li
+          className="u-mb30"
+        >
+          <div
+            className="m-form-field m-form-field__radio m-form-field__display"
+          >
+            <div
+              className="a-label"
+            >
+              <svg
+                className="m-form-field_radio-icon"
+                viewBox="0 0 22 22"
+              >
+                <circle
+                  className="m-form-field_radio-icon-stroke"
+                  cx="11"
+                  cy="11"
+                  r="10"
+                />
+                <circle
+                  className="m-form-field_radio-icon-fill"
+                  cx="11"
+                  cy="11"
+                  r="7"
+                />
+              </svg>
+              <div
+                aria-checked="false"
+                aria-disabled="true"
+                className="m-form-field_radio-text"
+                role="radio"
+              >
+                <div>
+                  <strong>
+                    Strong 
+                    content
+                  </strong>
+                </div>
+                All 6 criteria were met and at least one was exceeded
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="u-mb30"
+        >
+          <div
+            className="m-form-field m-form-field__radio m-form-field__display"
+          >
+            <div
+              className="a-label"
+            >
+              <svg
+                className="m-form-field_radio-icon"
+                viewBox="0 0 22 22"
+              >
+                <circle
+                  className="m-form-field_radio-icon-stroke"
+                  cx="11"
+                  cy="11"
+                  r="10"
+                />
+                <circle
+                  className="m-form-field_radio-icon-fill"
+                  cx="11"
+                  cy="11"
+                  r="7"
+                />
+              </svg>
+              <div
+                aria-checked="false"
+                aria-disabled="true"
+                className="m-form-field_radio-text"
+                role="radio"
+              >
+                <div>
+                  <strong>
+                    Moderate 
+                    content
+                  </strong>
+                </div>
+                All 6 criteria were met
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="u-mb30"
+        >
+          <div
+            className="m-form-field m-form-field__radio m-form-field__display"
+          >
+            <div
+              className="a-label"
+            >
+              <svg
+                className="m-form-field_radio-icon"
+                viewBox="0 0 22 22"
+              >
+                <circle
+                  className="m-form-field_radio-icon-stroke"
+                  cx="11"
+                  cy="11"
+                  r="10"
+                />
+                <circle
+                  className="m-form-field_radio-icon-fill"
+                  cx="11"
+                  cy="11"
+                  r="7"
+                />
+              </svg>
+              <div
+                aria-checked="false"
+                aria-disabled="true"
+                className="m-form-field_radio-text"
+                role="radio"
+              >
+                <div>
+                  <strong>
+                    Limited 
+                    content
+                  </strong>
+                </div>
+                At least one criterion was not met
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="m-form-field u-mb30"
+    >
+      <div
+        className="a-label a-label__heading"
+      >
+        Assets  
+        <small
+          className="a-label_helper"
+        >
+          (optional)
+        </small>
+      </div>
+      <p
+        class="o-survey_question-helper"
+      >
+        No information provided
+      </p>
+    </div>
+    <div
+      className="m-form-field m-form-field__textarea u-mb30"
+    >
+      <div
+        className="a-label a-label__heading"
+      >
+        Gaps  
+        <small
+          className="a-label_helper"
+        >
+          (optional)
+        </small>
+      </div>
+      <p
+        class="o-survey_question-helper"
+      >
+        No information provided
+      </p>
+    </div>
+    <div
+      className="m-form-field m-form-field__textarea"
+    >
+      <div
+        className="a-label a-label__heading"
+      >
+        Overall notes  
+        <small
+          className="a-label_helper"
+        >
+          (optional)
+        </small>
+      </div>
+      <p
+        class="o-survey_question-helper"
+      >
+        No information provided
+      </p>
+    </div>
+  </div>,
+  <div
+    className="block block__flush-top block__padded-bottom block__border-bottom"
+  >
+    <h2
+      className={false}
+      id={undefined}
+    >
+      <span
+        className="a-icon a-icon__large a-icon__space-after"
+      >
+        <svg
+          class="cf-icon-svg"
+          viewBox="0 0 1000 1200"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M379.9 493.6c-.7 0-1.5 0-2.2-.1-.7 0-1.5-.1-2.2-.2s-1.5-.2-2.2-.3c-.7-.1-1.5-.2-2.2-.4-.7-.1-1.4-.3-2.2-.5l-2.1-.6c-.7-.2-1.4-.4-2.1-.7-.7-.2-1.4-.5-2.1-.8s-1.3-.6-2-.9-1.3-.6-2-1c-.6-.3-1.3-.7-1.9-1.1s-1.3-.8-1.9-1.2c-.6-.4-1.2-.8-1.8-1.3-.6-.4-1.2-.9-1.8-1.4-.6-.5-1.1-.9-1.7-1.4-.5-.5-1.1-1-1.6-1.5s-1-1.1-1.5-1.6-1-1.1-1.4-1.7c-.5-.6-.9-1.2-1.4-1.7-.4-.6-.9-1.2-1.3-1.8-.4-.6-.8-1.2-1.2-1.9-.4-.6-.7-1.3-1.1-1.9-.3-.6-.7-1.3-1-2s-.6-1.3-.9-2-.5-1.4-.8-2c-.2-.7-.5-1.4-.7-2.1l-.6-2.1c-.2-.7-.3-1.4-.5-2.2-.1-.7-.3-1.4-.4-2.2-.1-.7-.2-1.5-.3-2.2-.1-.7-.1-1.5-.2-2.2 0-.7-.1-1.5-.1-2.2s0-1.5.1-2.2c0-.7.1-1.5.2-2.2s.2-1.5.3-2.2c.1-.7.2-1.4.4-2.2.2-.7.3-1.4.5-2.1l.6-2.1c.2-.7.5-1.4.7-2.1s.5-1.4.8-2.1.6-1.4.9-2c.3-.7.7-1.3 1-2 .3-.6.7-1.3 1.1-1.9s.8-1.3 1.2-1.9c.4-.6.8-1.2 1.3-1.8.4-.6.9-1.2 1.4-1.7.5-.6 1-1.1 1.4-1.7.5-.5 1-1.1 1.5-1.6s1.1-1 1.6-1.5 1.1-1 1.7-1.4c.6-.5 1.2-.9 1.8-1.4.6-.4 1.2-.9 1.8-1.3.6-.4 1.2-.8 1.9-1.2.6-.4 1.3-.7 1.9-1.1.6-.3 1.3-.7 2-1s1.3-.6 2-.9 1.4-.5 2.1-.8c.7-.2 1.4-.5 2.1-.7l2.1-.6c.7-.2 1.4-.3 2.2-.5.7-.1 1.5-.3 2.2-.4s1.5-.2 2.2-.3c.7-.1 1.5-.1 2.2-.2 1.5-.1 3-.1 4.4 0 .7 0 1.5.1 2.2.2s1.5.2 2.2.3c.7.1 1.5.2 2.2.4.7.1 1.4.3 2.2.5l2.1.6c.7.2 1.4.5 2.1.7s1.4.5 2 .8c.7.3 1.4.6 2 .9.7.3 1.3.6 2 1 .6.3 1.3.7 1.9 1.1s1.2.8 1.9 1.2c.6.4 1.2.8 1.8 1.3.6.4 1.2.9 1.8 1.4.6.5 1.1 1 1.7 1.4.5.5 1.1 1 1.6 1.5s1 1.1 1.5 1.6 1 1.1 1.5 1.7.9 1.1 1.4 1.7c.4.6.9 1.2 1.3 1.8.4.6.8 1.2 1.2 1.9.4.6.7 1.3 1.1 1.9.3.6.7 1.3 1 2s.6 1.3.9 2 .5 1.4.8 2.1c.2.7.5 1.4.7 2.1l.6 2.1c.2.7.3 1.4.5 2.1.1.7.3 1.5.4 2.2s.2 1.5.3 2.2c.1.7.1 1.5.2 2.2 0 .7.1 1.5.1 2.2s0 1.5-.1 2.2c0 .7-.1 1.5-.2 2.2s-.2 1.5-.3 2.2c-.1.7-.2 1.5-.4 2.2-.1.7-.3 1.4-.5 2.2l-.6 2.1c-.2.7-.4 1.4-.7 2.1-.2.7-.5 1.4-.8 2-.3.7-.6 1.4-.9 2-.3.7-.6 1.3-1 2-.3.7-.7 1.3-1.1 1.9s-.8 1.3-1.2 1.9c-.4.6-.8 1.2-1.3 1.8-.4.6-.9 1.2-1.4 1.7-.5.6-1 1.1-1.5 1.7s-1 1.1-1.5 1.6-1.1 1-1.6 1.5-1.1 1-1.7 1.4c-.6.5-1.2.9-1.8 1.4-.6.4-1.2.9-1.8 1.3-.6.4-1.2.8-1.9 1.2-.6.4-1.3.7-1.9 1.1-.7.3-1.3.7-2 1s-1.3.6-2 .9-1.4.5-2 .8c-.7.2-1.4.5-2.1.7l-2.1.6c-.7.2-1.4.3-2.2.5-.7.1-1.5.3-2.2.4s-1.5.2-2.2.3c-.7.1-1.5.1-2.2.2-.7.1-1.5.1-2.2.1zM331.6 681.2h329.3v40H331.6z"
+          />
+          <circle
+            cx="380.1"
+            cy="448.8"
+            r="45.2"
+          />
+          <path
+            d="M331.6 782.8h329.3v40H331.6zM331.6 579.5h329.3v40H331.6z"
+          />
+          <path
+            d="M500 105.2c-276.1 0-500 223.9-500 500s223.9 500 500 500 500-223.9 500-500-223.9-500-500-500zm230.8 794.5c0 11-9 20-20 20H290.3c-11 0-20-9-20-20V312.4c0-11 9-20 20-20l239.2.2v166.3c0 16.8 13.8 30.6 30.6 30.6h171.3l-.6 410.2zm.6-456.5H575.8V292.7l155.5 150.1v.4h.1z"
+          />
+        </svg>
+      </span>
+      Content criterion
+    </h2>
+    <p>
+      <em>
+        Dimension not reviewed
+      </em>
+    </p>
+  </div>,
+]
+`;
