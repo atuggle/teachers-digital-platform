@@ -23,8 +23,6 @@ const contentHighProps = {
     numberFinalSummaryViews: "",
     resetPrintButtonState: (() => {}),
     studyAnswers: {},
-
-
 };
 
 afterAll(() => {

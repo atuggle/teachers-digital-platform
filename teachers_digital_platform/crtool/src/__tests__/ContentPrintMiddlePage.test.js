@@ -23,8 +23,6 @@ const contentMidldleProps = {
     numberFinalSummaryViews: "",
     resetPrintButtonState: (() => {}),
     studyAnswers: {},
-
-
 };
 
 afterAll(() => {
