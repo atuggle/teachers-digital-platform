@@ -32,6 +32,9 @@ export default class UtilityCriterionPage extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
+                <UtilityCriterionBlockSummary isEditable={true} {...this.props} />
+                <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
                 <hr className="hr
                                 u-mb45
                                 u-mt30" />
