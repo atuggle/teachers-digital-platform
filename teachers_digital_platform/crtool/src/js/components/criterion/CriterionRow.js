@@ -2,6 +2,7 @@ import React from "react";
 
 import CriterionAnswerArea from "./CriterionAnswerArea";
 import CriterionAnswerAreaEfficacyStudy from "./CriterionAnswerAreaEfficacyStudy";
+import EditableCriterionAnswerArea from "./EditableCriterionAnswerArea";
 
 export default class CriterionRow extends React.Component {
     render() {
@@ -23,10 +24,17 @@ export default class CriterionRow extends React.Component {
                         </React.Fragment>
                     }
 
-                    { // Is printing anything that is not Efficacy studies
-                        this.props.isEfficacyStudy !== true &&
+                    { // Is printing anything that is not Efficacy studies and that is read-only
+                        this.props.isEfficacyStudy !== true && this.props.isEditable !== true &&
                         <React.Fragment>
                             {this.props.rowData.components.map((componentData, i) => <CriterionAnswerArea key={i} {...this.props} componentData={this.props.rowData.components[i]}/>)}
+                        </React.Fragment>
+                    }
+
+                    { // Is printing anything that is not Efficacy studies and that is editable
+                        this.props.isEfficacyStudy !== true && this.props.isEditable === true &&
+                        <React.Fragment>
+                            {this.props.rowData.components.map((componentData, i) => <EditableCriterionAnswerArea key={i} {...this.props} componentData={this.props.rowData.components[i]}/>)}
                         </React.Fragment>
                     }
                 </div>

@@ -16,10 +16,13 @@ export default class QualityCriterionBlockSummary extends React.Component {
 
         return (
             <React.Fragment>
-                {this.props.qualityInProgress !== "complete" &&
-                    <DimensionNotReviewedComponent dimensionTitle="Quality criterion" dimensionName="Quality" {...this.props} />
+                {this.props.qualitySummaryView !== "true" &&
+                <div className={wrapperClasses}>
+
+                    {QualityContent.criterion.map((criterion, i) => <CriterionComponent key={i} criterionData={QualityContent.criterion[i]} {...this.props} />)}
+                </div>
                 }
-                {this.props.qualityInProgress === "complete" &&
+                {this.props.qualityInProgress === "complete" && this.props.qualitySummaryView === "true" &&
                     <div className={wrapperClasses}>
                         <DimensionIconTitleComponent
                             {...this.props}
@@ -31,6 +34,9 @@ export default class QualityCriterionBlockSummary extends React.Component {
                         </p>
                         {QualityContent.criterion.map((criterion, i) => <CriterionComponent key={i} criterionData={QualityContent.criterion[i]} {...this.props} />)}
                     </div>
+                }
+                {this.props.qualityInProgress !== "complete" && this.props.qualitySummaryView === "true" &&
+                    <DimensionNotReviewedComponent dimensionTitle="Quality criterion" dimensionName="Quality" {...this.props} />
                 }
             </React.Fragment>
         );

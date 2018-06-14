@@ -4,6 +4,7 @@ import C from "../../business.logic/constants";
 import SvgIcon from "../svgs/SvgIcon";
 import SaveWorkModal from "../dialogs/SaveWorkModal";
 import CriterionLinkWrapper from "./CriterionLinkWrapper";
+import QualityCriterionBlockSummary from "../../components/pages/summary/QualityCriterionBlockSummary";
 
 export default class QualityCriterionPage extends React.Component {
     criterionAnswerChanged(key, checkedValue) {
@@ -65,6 +66,20 @@ export default class QualityCriterionPage extends React.Component {
                                 u-mb30
                                 u-mt30" />
                 <p className="u-mb60"><strong>All questions are required, unless otherwise noted.</strong></p>
+
+
+
+
+<h1> ####################### </h1>
+<h1> ####################### </h1>
+
+<QualityCriterionBlockSummary {...this.props} isEditable={true} changeAnswer={this.criterionAnswerChanged.bind(this)}/>
+
+
+<h1> ####################### </h1>
+<h1> ####################### </h1>
+
+
                 <div className="block block__flush-top" id="criterion_1">
                     <h3 className="h2">
                         <SvgIcon
