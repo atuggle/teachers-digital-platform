@@ -4,6 +4,7 @@ import C from "../../business.logic/constants";
 import SvgIcon from "../svgs/SvgIcon";
 import SaveWorkModal from "../dialogs/SaveWorkModal";
 import CriterionLinkWrapper from "./CriterionLinkWrapper";
+import UtilityCriterionBlockSummary from "./summary/UtilityCriterionBlockSummary";
 
 export default class UtilityCriterionPage extends React.Component {
     criterionAnswerChanged(key, checkedValue) {
@@ -31,6 +32,11 @@ export default class UtilityCriterionPage extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <h1>
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
+                <UtilityCriterionBlockSummary {...this.props}/>
+                <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                </h1>
                 <hr className="hr
                                 u-mb45
                                 u-mt30" />
