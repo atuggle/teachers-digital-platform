@@ -7,6 +7,14 @@ export default class RadioButtonEditable extends React.Component {
     }
 
     render() {
+        let ariaChecked = "false";
+        let svgClasses = "m-form-field_radio-icon";
+
+        if (this.props.isChecked) {
+            ariaChecked = "true";
+            svgClasses += " is-active";
+        }
+
         if (this.props.showButton === "false" && this.props.radioText === "NA") {
             return null;
         } else {
