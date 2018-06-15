@@ -1,6 +1,7 @@
 import React from "react";
 
 import RadioButton from "../buttons/RadioButton";
+import RadioButtonEditable from "../buttons/RadioButtonEditable";
 
 export default class CriterionAnswerAreaEfficacyStudy extends React.Component {
 
@@ -63,19 +64,19 @@ export default class CriterionAnswerAreaEfficacyStudy extends React.Component {
                         {this.renderTextFieldValue()}
                     </div>
                     <div className="o-survey_answer" role="radiogroup" aria-describedby={this.generateUniqueId()}>
-                        <RadioButton
+                        <RadioButtonEditable
                             radioText="Yes"
                             showButton="true"
                             text={this.props.text}
                             isChecked={this.props.studyAnswers[this.props.studyKey][this.props.componentData.criterionRefId.replace("_study_", this.props.studyKey)] === 'yes'}
                             {...this.props} />
-                        <RadioButton
+                        <RadioButtonEditable
                             radioText="No"
                             showButton="true"
                             text={this.props.text}
                             isChecked={this.props.studyAnswers[this.props.studyKey][this.props.componentData.criterionRefId.replace("_study_", this.props.studyKey)] === 'no'}
                             {...this.props} />
-                        <RadioButton
+                        <RadioButtonEditable
                             radioText="N/A"
                             showButton={this.props.componentData.showNaButton}
                             text={this.props.text}
