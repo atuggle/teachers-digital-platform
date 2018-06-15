@@ -76,12 +76,17 @@ export default class CriterionAnswerArea extends React.Component {
                             text={this.props.text}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'no'}
                             {...this.props} />
-                        <RadioButtonEditable
+                        {
+                        this.props.componentData.showNaButton === true &&
+                          <RadioButtonEditable
                             radioText="N/A"
                             showButton={this.props.componentData.showNaButton}
                             text={this.props.text}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'na'}
                             {...this.props} />
+                        } 
+                        
+                       
                     </div>
                 </div>
             </fieldset>
