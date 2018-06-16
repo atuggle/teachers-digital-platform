@@ -153,7 +153,7 @@ export default class EfficacyCriterionPage extends React.Component {
                 <hr className="hr
                                 u-mb30
                                 u-mt30" />
-                <p className="u-mb60"><strong>All questions are required, unless otherwise noted.</strong></p>
+                {this.props.renderFormLevelErrorMessage()}
                 <div className="block block__flush-top" id="criterion_1">
                     <h3 className="h2">
                         <SvgIcon

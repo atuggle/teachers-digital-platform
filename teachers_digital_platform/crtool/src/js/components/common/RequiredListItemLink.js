@@ -28,21 +28,13 @@ export default class RequiredListItemLink extends React.Component {
     }
 
     getComponentText() {
-        return this.props.criterion.componentText
-            .replace("<strong>", "")
-            .replace("</strong>", "")
-            .replace("<ul>", "")
-            .replace("</ul>", "")
-            .replace("<li>", "")
-            .replace("</li>", "")
-            .replace("<p>", "")
-            .replace("</p>", "");
+        return (<div dangerouslySetInnerHTML={{__html: this.props.criterion.componentText}} />);
     }
 
     render() {
         return (
             <li>
-                <button className="a-btn a-btn__link" data-gtm_ignore="true" onClick={(e) => {this.scrollToRequiredCriterion();}}>
+                <button className="a-btn__heading a-btn a-btn__link" data-gtm_ignore="true" onClick={(e) => {this.scrollToRequiredCriterion();}}>
                     {this.getComponentText()}
                 </button>
             </li>

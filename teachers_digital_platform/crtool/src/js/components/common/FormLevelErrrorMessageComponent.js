@@ -66,11 +66,11 @@ export default class FormLevelErrorMessageComponent extends React.Component {
         return (
             <div className="m-notification
                     m-notification__visible
-                    m-notification__warning
+                    m-notification__error
                     u-mb30">
                 <SvgIcon icon={C.ICON_X_ROUND} />
                 <div className="m-notification_content">
-                    <div className="m-notification_message">
+                    <div className="h4 m-notification_message">
                         <p>The following form fields are incomplete or have errors:</p>
                         <ul>
                             {
