@@ -102,11 +102,6 @@ export default class CriterionAnswerArea extends React.Component {
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'na'}
                             {...this.props} />
                         } 
-<<<<<<< HEAD
-=======
-                        
-                       
->>>>>>> d967d66d226a2c828ef1300b2e707591da199eb8
                     </div>
                 </div>
             </fieldset>

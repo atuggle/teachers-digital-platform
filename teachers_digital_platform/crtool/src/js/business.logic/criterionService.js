@@ -12,6 +12,7 @@ const CriterionService = {
      * and update any other states in the application
      */
     criterionAnswerChanged(component, distinctive, changedQuestion, newValue) {
+        console.log("Entering criterion service answer change");
         let alteredCriterionObjects =  component.state.criterionAnswers;
         alteredCriterionObjects[changedQuestion] = newValue;
 

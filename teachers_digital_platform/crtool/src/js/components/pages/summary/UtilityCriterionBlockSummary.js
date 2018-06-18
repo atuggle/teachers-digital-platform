@@ -7,6 +7,12 @@ import DimensionNotReviewedComponent from "../../common/DimensionNotReviewedComp
 
 export default class UtilityCriterionBlockSummary extends React.Component {
 
+    criterionStudyAnswerChanged(key, checkedValue) {
+        if (this.props.studyAnswers[this.props.studyCount][key] !== checkedValue) {
+            this.props.studyAnswerChanged(this.props.studyCount, key, checkedValue);
+        }
+    }
+
     render() {
         let wrapperClasses = "u-page-break-before";
 

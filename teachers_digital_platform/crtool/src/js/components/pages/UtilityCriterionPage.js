@@ -8,6 +8,8 @@ import UtilityCriterionBlockSummary from "./summary/UtilityCriterionBlockSummary
 
 export default class UtilityCriterionPage extends React.Component {
     criterionAnswerChanged(key, checkedValue) {
+        console.log("&&&&&&&&&&&&&&&");
+        console.log("Entering page answer change method");
         this.initializeAnswerValuesByRefs();
         this.props.criterionAnswerChanged(C.UTILITY_PAGE, key, checkedValue);
     }
