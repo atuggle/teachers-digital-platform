@@ -1,5 +1,6 @@
 import React from "react";
 
+import C from "../../business.logic/constants";
 import RadioButton from "../buttons/RadioButton";
 import RadioButtonEditable from "../buttons/RadioButtonEditable";
 
@@ -52,6 +53,14 @@ export default class CriterionAnswerArea extends React.Component {
         return "radio_" + this.props.componentData.criterionRefId;
     }
 
+    criterionAnswerChanged(key, checkedValue) {
+        console.log("##### ENTERING CRITERION CHANGE METHOD");
+        console.log(key);
+        console.log(checkedValue);
+        this.initializeAnswerValuesByRefs();
+        this.props.criterionAnswerChanged(C.UTILITY_PAGE, key, checkedValue);
+    }
+    
     render() {
         return (
             <fieldset className="o-survey_fieldset">
@@ -66,22 +75,33 @@ export default class CriterionAnswerArea extends React.Component {
                     <div className="o-survey_answer" role="radiogroup" aria-describedby={this.generateUniqueId()}>
                         <RadioButtonEditable
                             radioText="Yes"
+                            letter = "a"
                             showButton="true"
                             text={this.props.text}
+                            criterionAnswerChanged={(e) => {this.criterionAnswerChanged(this.props.componentData.criterionRefId, 'yes'); }}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'yes'}
                             {...this.props} />
                         <RadioButtonEditable
                             radioText="No"
+                            letter = "b"
                             showButton="true"
                             text={this.props.text}
+                            criterionAnswerChanged={(e) => {
+                                this.criterionAnswerChanged(this.props.componentData.criterionRefId, 'no');
+                            }}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'no'}
                             {...this.props} />
-                        <RadioButtonEditable
+                        {
+                        this.props.componentData.showNaButton === true &&
+                          <RadioButtonEditable
                             radioText="N/A"
+                            letter = "c"
                             showButton={this.props.componentData.showNaButton}
                             text={this.props.text}
+                            criterionAnswerChanged={(e) => {this.criterionAnswerChanged(this.props.componentData.criterionRefId, 'na');}}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'na'}
                             {...this.props} />
+                        } 
                     </div>
                 </div>
             </fieldset>

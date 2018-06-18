@@ -16,10 +16,12 @@ export default class UtilityCriterionBlockSummary extends React.Component {
 
         return (
             <React.Fragment>
-                {this.props.utilityInProgress !== "complete" &&
-                    <DimensionNotReviewedComponent dimensionTitle="Utility criterion" dimensionName="Utility" {...this.props} />
+                {this.props.qualitySummaryView !== "true" &&
+                <div className={wrapperClasses}>
+                    {UtilityContent.criterion.map((criterion, i) => <CriterionComponent key={i} criterionData={UtilityContent.criterion[i]} {...this.props} criterionAnswerChanged={this.props.criterionStudyAnswerChanged}/>)}
+                </div>
                 }
-                {this.props.utilityInProgress === "complete" &&
+                {this.props.utilityInProgress === "complete" && this.props.utilitySummaryView === "true" &&
                     <div className={wrapperClasses}>
                         <DimensionIconTitleComponent
                             {...this.props}
@@ -27,10 +29,13 @@ export default class UtilityCriterionBlockSummary extends React.Component {
                             dimensionTitle={"Utility criterion"}
                             isH1="true" />
                         <p className="lead-paragraph">
-                            The utility dimension evaluates the supports for using the curriculum. Such supports include guidance for teachers, materials that facilitate strong and effective instruction, and assessments to measure student mastery of skills and knowledge.
+                            The quality dimension assesses whether curriculum materials are clear, accurate, and objective and how easy the materials are for teachers and students to access.
                         </p>
                         {UtilityContent.criterion.map((criterion, i) => <CriterionComponent key={i} criterionData={UtilityContent.criterion[i]} {...this.props} />)}
                     </div>
+                }
+                {this.props.utilityInProgress !== "complete" && this.props.utilitySummaryView === "true" &&
+                    <DimensionNotReviewedComponent dimensionTitle="Utility criterion" dimensionName="Utility" {...this.props} />
                 }
             </React.Fragment>
         );

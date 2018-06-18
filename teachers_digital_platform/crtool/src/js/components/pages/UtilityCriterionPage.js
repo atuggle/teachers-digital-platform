@@ -29,6 +29,7 @@ export default class UtilityCriterionPage extends React.Component {
                         (this.props.currentPage === C.EFFICACY_PAGE && this.props.efficacyInProgress === C.STATUS_COMPLETE) ));
     }
 
+
     render() {
         return (
             <React.Fragment>
