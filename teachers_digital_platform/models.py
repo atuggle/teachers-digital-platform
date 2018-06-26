@@ -7,6 +7,7 @@ from v1.models import CFGOVPage, CFGOVPageManager
 
 
 class TDPPage(CFGOVPage):
+    # super(CFGOVPage)
     body = RichTextField(blank=True)
     intro = models.CharField(max_length=250)
 
@@ -18,5 +19,4 @@ class TDPPage(CFGOVPage):
         ObjectList(CFGOVPage.sidefoot_panels, heading='Sidebar/Footer'),
         ObjectList(CFGOVPage.settings_panels, heading='Configuration'),
     ])
-
     objects = CFGOVPageManager()
