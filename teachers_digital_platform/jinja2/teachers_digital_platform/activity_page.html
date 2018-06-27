@@ -1,0 +1,25 @@
+{% extends 'layout-2-1-bleedbar.html' %}
+
+
+{% block metadescription %}
+Activities
+{% endblock metadescription %}
+
+{% block content_main %}
+<h1>{{ page.title }}</h1>
+
+<ul>
+    {% for activity in activities %}
+    <li><h2>{{ activity.name }}</h2> 
+        <ul>
+        <li>{{ activity.description }}</li>
+        {% for l in activity.school_level.all() %}
+        <li>{{ l.name }}</li>
+        {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock content_main %}
