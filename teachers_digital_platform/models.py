@@ -32,32 +32,31 @@ class ActivitySchoolLevel(models.Model):
         return self.name
 
     class Meta:
-        verbose_name_plural = 'activity school levels'
+        verbose_name = 'Activity School Level'
 
 class Activity(models.Model):
-    title = models.CharField(max_length=250)
-    description = models.CharField(max_length=250)
-    school_level = ParentalManyToManyField('ActivitySchoolLevel', blank=True)
+    name = models.CharField(max_length=250)
+    description = models.TextField(max_length=250)
+    school_level = models.ManyToManyField('ActivitySchoolLevel')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'Activities'
 
 class ActivityPage(CFGOVPage):
-    activity_title = models.CharField(max_length=250)
-    activity_description = RichTextField(blank=True)
-    school_level = ParentalManyToManyField('ActivitySchoolLevel', blank=True)
-
-    search_fields = CFGOVPage.search_fields + [
-        index.SearchField('activity_title'),
-        index.SearchField('activity_description'),
-    ]
-
     edit_handler = TabbedInterface([
-        ObjectList(Page.content_panels + [ 
-            FieldPanel('activity_title', classname="full"),
-            FieldPanel('activity_description', classname="full"),
-            FieldPanel('school_level', widget=forms.CheckboxSelectMultiple),],
-            heading='General Content'),
+        ObjectList(Page.content_panels),
         ObjectList(CFGOVPage.sidefoot_panels, heading='Sidebar/Footer'),
         ObjectList(CFGOVPage.settings_panels, heading='Configuration'),
     ])
     objects = CFGOVPageManager()
    
+    def get_context(self, request):
+        context = super(ActivityPage, self).get_context(request)
 
+        # Add extra variables and return the updated context
+        context['activities'] = Activity.objects.all().prefetch_related()
+        context['school_levels'] = ActivitySchoolLevel.objects.all()
+        return context
