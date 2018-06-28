@@ -1,6 +1,7 @@
 from django.db import models
 from django import forms
 from wagtail.wagtailsearch import index
+from wagtail.contrib.wagtailroutablepage.models import RoutablePageMixin, route
 
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailcore.fields import RichTextField
@@ -36,7 +37,7 @@ class ActivitySchoolLevel(models.Model):
 
 class Activity(models.Model):
     name = models.CharField(max_length=250)
-    description = models.TextField(max_length=250)
+    description = models.TextField(max_length=1000)
     school_level = models.ManyToManyField('ActivitySchoolLevel')
 
     def __str__(self):
@@ -45,14 +46,25 @@ class Activity(models.Model):
     class Meta:
         verbose_name_plural = 'Activities'
 
-class ActivityPage(CFGOVPage):
+class ActivityPage(RoutablePageMixin, CFGOVPage):
     edit_handler = TabbedInterface([
         ObjectList(Page.content_panels),
         ObjectList(CFGOVPage.sidefoot_panels, heading='Sidebar/Footer'),
         ObjectList(CFGOVPage.settings_panels, heading='Configuration'),
     ])
     objects = CFGOVPageManager()
+
+    @route(r'^Search/$')
+    def activity_search(self, request, *args, **kwargs):
+        search_query = request.GET.get('q', None)
+        self.activities = self.get_activities()
+        if search_query:
+            self.activities = self.activities.filter(name__contains=search_query)
+            self.search_term = search_query
+            self.search_type = 'search'
+        return Page.serve(self, request, *args, **kwargs)
    
+    @route(r'^/$')
     def get_context(self, request):
         context = super(ActivityPage, self).get_context(request)
 
