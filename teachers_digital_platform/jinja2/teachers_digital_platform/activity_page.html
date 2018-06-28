@@ -1,11 +1,18 @@
 {% extends 'layout-2-1-bleedbar.html' %}
 
-
 {% block metadescription %}
 Activities
 {% endblock metadescription %}
 
 {% block content_main %}
+
+{% if search_term %}
+    <header class="page-header">
+        <h1 class="page-title">Search Results for 
+           <span>{{ search_type }}: {{ search_term }}</span>
+       </h1>
+    </header>
+{% endif %}
 <h1>{{ page.title }}</h1>
 
 <ul>
@@ -14,12 +21,23 @@ Activities
         <ul>
         <li>{{ activity.description }}</li>
         {% for l in activity.school_level.all() %}
-        <li>{{ l.name }}</li>
+        <li>{{ l }}</li>
         {% endfor %}
         </ul>
     </li>
     {% endfor %}
 </ul>
+
+<form role="search" method="get" class="form-search" action= {{ request.url }} method="get">
+    <div class="input-group">
+        <input type="text" class="form-control search-query" name="q" placeholder="Search&hellip;" title="Search for:" />
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Search">
+            Submit
+          </button>
+        </span>
+    </div>
+</form>
 
 
 {% endblock content_main %}
