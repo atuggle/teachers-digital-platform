@@ -19,6 +19,11 @@ class ActivitySearchPage(RoutablePageMixin, CFGOVPage):
         ObjectList(CFGOVPage.settings_panels, heading='Configuration'),
     ])
     objects = CFGOVPageManager()
+    subpage_types = ['teachers_digital_platform.ActivityPage']
+
+    def child_pages(self):
+        return ActivityPage.objects.live().child_of(self)
+
 
 class ActivityPage(CFGOVPage):
     date = models.DateField('Updated', default=timezone.now)

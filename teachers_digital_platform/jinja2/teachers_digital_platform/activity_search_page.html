@@ -1,0 +1,17 @@
+{% extends 'layout-2-1-bleedbar.html' %}
+
+{% block metadescription %}
+Activities Search Page
+{% endblock metadescription %}
+
+{% block content_main %}
+<h1>Teaching Activities</h1><br><br>
+<ul>
+{% for activity in page.child_pages() %}
+    <h2><a href="{{ pageurl(activity) }}">{{ activity.title }}</a></h2>
+    <ul>
+        <li>{{ activity.summary }}</li>
+    </ul>
+{% endfor %}
+</ul>
+{% endblock content_main %}
