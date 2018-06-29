@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import Q
 from django import forms
 from django.utils import timezone
 from wagtail.wagtailsearch import index
@@ -21,8 +22,25 @@ class ActivitySearchPage(RoutablePageMixin, CFGOVPage):
     objects = CFGOVPageManager()
     subpage_types = ['teachers_digital_platform.ActivityPage']
 
-    def child_pages(self):
+    activity_query = Q()
+
+    def get_activities(self):
         return ActivityPage.objects.live().child_of(self)
+
+    def get_context(self, request):
+        context = super(ActivitySearchPage, self).get_context(request)
+        context['activities'] = self.get_activities().filter(self.activity_query)
+        return context
+
+    @route(r'^search/$')
+    def act_search(self, request, *args, **kwargs):
+        print("entering routed method")
+        search_query = request.GET.get('q', None)
+        if search_query:
+            self.activity_query = self.activity_query & Q(summary__icontains=search_query)
+            self.search_term = search_query
+            self.search_type = 'Search'
+        return CFGOVPage.serve(self, request, *args, **kwargs)
 
 
 class ActivityPage(CFGOVPage):
@@ -57,7 +75,7 @@ class ActivityPage(CFGOVPage):
          MultiFieldPanel(
              [
                  DocumentChooserPanel('activity_file'),
-                 DocumentChooserPanel('handout_file'),
+                      DocumentChooserPanel('handout_file'),
              ], 
          heading = 'General')]),
         ObjectList(CFGOVPage.sidefoot_panels, heading='Sidebar/Footer'),

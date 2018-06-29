@@ -5,13 +5,34 @@ Activities Search Page
 {% endblock metadescription %}
 
 {% block content_main %}
-<h1>Teaching Activities</h1><br><br>
+<h1>Teaching Activities</h1>
+{% if page.search_term %}
+    <header class="page-header">
+        <h1 class="page-title">Search Results for: 
+           <span> {{ page.search_term }}</span>
+       </h1>
+    </header>
+{% endif %}
+<br>
 <ul>
-{% for activity in page.child_pages() %}
+{% for activity in activities %}
     <h2><a href="{{ pageurl(activity) }}">{{ activity.title }}</a></h2>
     <ul>
         <li>{{ activity.summary }}</li>
     </ul>
 {% endfor %}
 </ul>
+
+<form role="search" method="get" class="form-search" action="{{page.url}}search/" method="get">
+    <div class="input-group">
+        <input type="text" class="form-control search-query" name="q" placeholder="Search&hellip;" title="Search for:" />
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Search">
+            <span class="glyphicon glyphicon-search"></span>
+          Search</button>
+        </span>
+    </div>
+</form>
+
+
 {% endblock content_main %}
