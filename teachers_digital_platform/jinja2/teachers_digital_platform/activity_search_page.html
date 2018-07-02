@@ -16,7 +16,7 @@ Activities Search Page
 <br>
 <ul>
 {% for activity in activities %}
-    <h2><a href="{{ pageurl(activity) }}">{{ activity.title }}</a></h2>
+    <h2><a href="{{ pageurl(activity) }}{% if page.search_term %}?q={{ page.search_term }}{% endif %}">{{ activity.title }}</a></h2>
     <ul>
         <li>{{ activity.summary }}</li>
     </ul>

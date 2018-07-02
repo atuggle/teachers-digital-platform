@@ -24,6 +24,12 @@ class ActivitySearchPage(RoutablePageMixin, CFGOVPage):
 
     activity_query = Q()
 
+    @classmethod
+    def can_create_at(cls, parent):
+    # You can only create one of these!
+        return super(ActivitySearchPage, cls).can_create_at(parent) \
+            and not cls.objects.exists()
+
     def get_activities(self):
         return ActivityPage.objects.live().child_of(self)
 
@@ -34,7 +40,6 @@ class ActivitySearchPage(RoutablePageMixin, CFGOVPage):
 
     @route(r'^search/$')
     def act_search(self, request, *args, **kwargs):
-        print("entering routed method")
         search_query = request.GET.get('q', None)
         if search_query:
             self.activity_query = self.activity_query & Q(summary__icontains=search_query)
