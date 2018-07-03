@@ -26,7 +26,6 @@ class ActivitySearchPage(RoutablePageMixin, CFGOVPage):
 
     @classmethod
     def can_create_at(cls, parent):
-    # You can only create one of these!
         return super(ActivitySearchPage, cls).can_create_at(parent) \
             and not cls.objects.exists()
 
@@ -88,6 +87,16 @@ class ActivityPage(CFGOVPage):
     ])
     objects = CFGOVPageManager()
     parent_page_types = [ActivitySearchPage]
+
+    def get_context(self, request):
+        flag = False
+        context = super(ActivityPage, self).get_context(request)
+        if 'q' in request.GET:
+            flag = True
+            context['url'] = 'http://localhost:8000/activity-list/search/?q=' + request.GET.get('q')
+        else:
+            context['url'] = 'http://localhost:8000/activity-list/'
+        return context
 
     class Meta:
         verbose_name = 'Activity Page'

@@ -6,13 +6,6 @@ Activities
 
 {% block content_main %}
 
-{% if search_term %}
-    <header class="page-header">
-        <h1 class="page-title">Search Results for 
-           <span>{{ search_type }}: {{ search_term }}</span>
-       </h1>
-    </header>
-{% endif %}
 <h1>{{ page.title }}</h1>
 <h2>{{ page.summary }}</h1>
 
@@ -20,6 +13,6 @@ Activities
 <h3>{{ page.essential_questions | richtext }}</h3>
 <h3>{{ page.objectives | richtext }}</h3>
 
-<p><a href="javascript:history.back()">Return to Activity List</a></p>
+<p><a href="{{ url }}">Return to Search List</a></p>
 
 {% endblock content_main %}
