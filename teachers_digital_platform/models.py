@@ -89,10 +89,8 @@ class ActivityPage(CFGOVPage):
     parent_page_types = [ActivitySearchPage]
 
     def get_context(self, request):
-        flag = False
         context = super(ActivityPage, self).get_context(request)
         if 'q' in request.GET:
-            flag = True
             context['url'] = 'http://localhost:8000/activity-list/search/?q=' + request.GET.get('q')
         else:
             context['url'] = 'http://localhost:8000/activity-list/'
