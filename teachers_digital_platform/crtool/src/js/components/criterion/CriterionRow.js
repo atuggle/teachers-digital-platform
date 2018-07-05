@@ -34,7 +34,7 @@ export default class CriterionRow extends React.Component {
                     { // Is printing anything that is not Efficacy studies and that is editable
                         this.props.isEfficacyStudy !== true && this.props.isEditable === true &&
                         <React.Fragment>
-                            {this.props.rowData.components.map((componentData, i) => <EditableCriterionAnswerArea key={i} {...this.props} componentData={this.props.rowData.components[i]}/>)}
+                            {this.props.rowData.components.map((componentData, i) => <EditableCriterionAnswerArea key={i} {...this.props} componentData={this.props.rowData.components[i]} />)}
                         </React.Fragment>
                     }
                 </div>

@@ -69,12 +69,16 @@ export default class CriterionAnswerArea extends React.Component {
                             showButton="true"
                             text={this.props.text}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'yes'}
+                            letter="a"
+                            radioButtonClicked={(e) => {this.props.criterionAnswerChanged(this.props.componentData.criterionRefId, 'yes');}}
                             {...this.props} />
                         <RadioButtonEditable
                             radioText="No"
                             showButton="true"
                             text={this.props.text}
                             isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'no'}
+                            letter="b"
+                            radioButtonClicked={(e) => {this.props.criterionAnswerChanged(this.props.componentData.criterionRefId, 'no');}}
                             {...this.props} />
                         { // if NA button is present
                             this.props.componentData.showNaButton === true &&
@@ -83,6 +87,8 @@ export default class CriterionAnswerArea extends React.Component {
                                 showButton={this.props.componentData.showNaButton}
                                 text={this.props.text}
                                 isChecked={this.props.criterionAnswers[this.props.componentData.criterionRefId] === 'na'}
+                                letter="c"
+                                radioButtonClicked={(e) => {this.props.criterionAnswerChanged(this.props.componentData.criterionRefId, 'na');}}
                                 {...this.props} />
                         }
                     </div>
@@ -91,33 +97,3 @@ export default class CriterionAnswerArea extends React.Component {
         );
     }
 }
-
-// export default class RadioButtonEditable extends React.Component {
-
-//     generateUniqueId() {
-//         return this.props.currentCriterionRefId + "_" + this.props.uniqueId;
-//     }
-
-//     render() {
-//         if (this.props.showButton === "false" && this.props.radioText === "NA") {
-//             return null;
-//         } else {
-//             return (
-//                 <div className="m-form-field
-//                                 m-form-field__radio
-//                                 m-form-field__lg-target">
-//                     <input className="a-radio" type="radio" value="0"
-//                         id={this.generateUniqueId()}
-//                         name={this.props.currentCriterionRefId}
-//                         ref={this.props.currentCriterionRefId}
-//                         checked={this.props.isChecked}
-//                         onChange={() => {this.props.radioButtonClicked()}} />
-
-//                     <label className="a-label" htmlFor={this.generateUniqueId()}>
-//                         {this.props.radioText}
-//                     </label>
-//                 </div>
-//             );
-//         }
-//     }
-// }

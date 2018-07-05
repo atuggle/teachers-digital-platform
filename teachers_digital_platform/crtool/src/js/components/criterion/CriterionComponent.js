@@ -24,7 +24,8 @@ export default class CriterionComponent extends React.Component {
                     {
                         this.props.criterionData.rows.map(
                             (rowData, i) =>
-                            <CriterionRow key={i} {...this.props} rowData={this.props.criterionData.rows[i]}/>)
+                            <CriterionRow key={i} {...this.props} rowData={this.props.criterionData.rows[i]} />)
+                            //<EditableSubComponentRow key={i} {...this.props} rowData={this.props.criterionData.rows[i]}/>)
                     }
                 </ol>
                 <div className="m-form-field m-form-field__textarea">

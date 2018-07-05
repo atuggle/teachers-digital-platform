@@ -7,7 +7,10 @@ import CriterionLinkWrapper from "./CriterionLinkWrapper";
 import QualityCriterionBlockSummary from "../../components/pages/summary/QualityCriterionBlockSummary";
 
 export default class QualityCriterionPage extends React.Component {
+
     criterionAnswerChanged(key, checkedValue) {
+        console.log(key);
+        console.log(checkedValue);
         this.initializeAnswerValuesByRefs();
         this.props.criterionAnswerChanged(C.QUALITY_PAGE, key, checkedValue);
     }
@@ -73,7 +76,10 @@ export default class QualityCriterionPage extends React.Component {
 <h1> ####################### </h1>
 <h1> ####################### </h1>
 
-<QualityCriterionBlockSummary {...this.props} isEditable={true} changeAnswer={this.criterionAnswerChanged.bind(this)}/>
+<QualityCriterionBlockSummary 
+    {...this.props} 
+    isEditable={true} 
+    criterionAnswerChanged={this.criterionAnswerChanged.bind(this)}/>
 
 
 <h1> ####################### </h1>

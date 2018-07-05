@@ -18,7 +18,6 @@ export default class QualityCriterionBlockSummary extends React.Component {
             <React.Fragment>
                 {this.props.qualitySummaryView !== "true" &&
                 <div className={wrapperClasses}>
-
                     {QualityContent.criterion.map((criterion, i) => <CriterionComponent key={i} criterionData={QualityContent.criterion[i]} {...this.props} />)}
                 </div>
                 }
